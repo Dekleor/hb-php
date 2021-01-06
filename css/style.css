@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "pacifico";
+    src: url(../fonts/Pacifico.ttf) format("truetype");
+  }
+
+:root {
+    --rose: 207, 92, 120;
+    --bleu: 0, 88, 155;
+    --jaune: 245, 223, 77;
+    --bleuClair: 0, 160, 176;
+  }
+
+body {
+    background-color: rgb(var(--bleuClair));
+    color: rgb(var(--jaune));
+    
+}
+/******** HEADER ********/
+
+header h1 {
+    position : sticky;
+    margin: 0px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/header.jpg);
+    background-position: bottom;
+    padding: 50px 0px;
+    text-align: center;
+    font-family: pacifico;
+    color: rgb(var(--bleu));
+    text-shadow: 2px 2px black;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: pacifico;
+    padding: 15px 0;
+}
+
+header nav a:hover, a:active {
+    
+}
+
+header nav a:nth-child(even) {
+    background-color: rgb(var(--bleu));
+}
+
+header nav a:nth-child(odd) {
+    background-color: rgb(var(--rose));
+}
