@@ -1,32 +1,17 @@
 <?php
 include 'includes/header.php';
 
-echo "<div class='card' style='width: 18rem;'>
-<img src='img/P2101462.jpg' class='card-img-top' alt='bonnetA'>
-<div class='card-body'>
-    <h5 class='card-title'>Bonnet Nichon</h5>
-    <p class='card-text'>Vous en avez marre d avoir une tête de bite ?</p>
-    <a href='#' class='btn btn-primary'>Acheter MAINTENANT !</a>
-</div>
-</div>
-
-<div class='card' style='width: 18rem;'>
-<img src='img/bonnettentacule.jpg' class='card-img-top' alt='bonnetB'>
-<div class='card-body'>
-<h5 class='card-title'>Bonnet Tentacules</h5>
-<p class='card-text'>Restez au chaud tout en invoquant votre Grand Ancien préféré !</p>
-<a href='#' class='btn btn-primary'>Cthulhu R’lyeh wgah’nagl fhtagn!</a>
-</div>
-</div>
-
-<div class='card' style='width: 18rem;'>
-<img src=' img/chapeaubarbe.jpg' class='card-img-top' alt='bonnetC'>
-<div class='card-body'>
-<h5 class='card-title'>Bonnet Barbe</h5>
-<p class='card-text'>Plus un poil sur le caillou et une barbe nulle ? Une solution clef en main pour vos soucis de pilosité !</p>
-<a href='#' class='btn btn-primary'>Acheter MAINTENANT !</a>
-</div>
-</div>";
+echo "
+<section>
+    <h2> Qui sommes-nous ?</h2>
+    <div id='presentation'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sunt vitae ut est sapiente ab ad animi quibusdam placeat beatae! Harum unde quam asperiores aliquid aliquam iure neque architecto rem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptate necessitatibus aliquam aspernatur mollitia unde dolorum facilis dolore fugit officia quia reprehenderit veniam voluptates expedita, cum quos, nobis sequi sit.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, expedita debitis laboriosam soluta quas magni accusamus. Dolorum, voluptas est, odio enim quia at aperiam distinctio tempore, eius quasi fuga minus.
+        </p>
+        <img src='img/presentation.jpg'>
+    </div>
+</section>";
 
 include 'includes/footer.php';
 ?>
