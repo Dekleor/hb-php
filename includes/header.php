@@ -2,7 +2,16 @@
 
 require_once('array.php');
 require_once('function.php');
+session_start();
 
+if(!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password'] === $password) {
+    $_SESSION['username'] = $_POST['username'];
+    header("Location: index.php");
+} elseif (!empty($_POST['password'])) {
+    $message = "Veuillez entrer un mot de passe correct";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,14 +26,20 @@ require_once('function.php');
 <body>
 
 <header>
-<!-- une jolie image de header-->
     <h1><a href="index.php"> La Bonneterie des Petits Pédestres</a></h1>
 
-<!-- ici on met genre un menu de selection-->
-<nav>
-        <a href= "homme.php">Bonnets homme</a>
+    <nav>
+        <?php
+        if (!isset($_SESSION['username'])) {
+            echo '<a href="login.php">Se connecter</a>';
+        } else {
+            echo '<a href="monCompte.php">'.$_SESSION['username'].'</a>';
+        }
+        ?>
+        <a href="homme.php">Bonnets homme</a>
         <a href="femme.php"> Bonnets femme</a>
         <a href="enfant.php"> Bonnets enfant</a>
         <a href="fantasy.php"> Bonnets fantaisy</a>
-</nav>
+    </nav>
 </header>
+<main>
