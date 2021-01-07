@@ -8,9 +8,15 @@
     --bleu: 0, 88, 155;
     --jaune: 245, 223, 77;
     --bleuClair: 0, 160, 176;
-  }
+}
+
+html {
+    height: 100%;
+}
 
 body {
+    min-height: 100%;
+    position: relative;
     background-color: rgb(var(--bleuClair));
     color: rgb(var(--jaune));
 }
@@ -56,8 +62,8 @@ header nav a:nth-child(odd) {
 }
 
 /******** MAIN ********/
-section {
-    margin : 30px  60px;
+main {
+    margin: 30px 50px;
 }
 
 section h2 {
@@ -76,8 +82,53 @@ section h2 {
     border-radius: 25px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container div {
+    display: flex;
+    align-items: baseline;
+}
+
+.container div input {
+    margin-left: 5px;
+}
+
+.container input {
+    margin-bottom: 10px;
+}
+
+.container button {
+    border-radius: 25px;
+}
+
+#monCompte {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#monCompte button {
+    border-radius: 25px;
+    background-color: rgb(var(--rose));
+    padding: 10px 20px;
+}
+
+#deco {
+    text-align: center;
+}
 
 /******** FOOTER ********/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 50px;
+    width: 100%;
+}
 
 footer p {
     text-align: center;

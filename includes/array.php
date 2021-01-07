@@ -4,4 +4,7 @@ $listeBonnet = [
 ["bonnet en laine bio", 14, "lorem ipsum"], 
 ["bonnet en laine et cahsmire", 20, "lorem ipsum"], 
 ["bonnet arc-en-ciel", 12, "lorem ipsum"]];
+
+$password = 'toto';
 ?>
+

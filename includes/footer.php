@@ -1,5 +1,6 @@
+</main>
 <footer>
-    <p>All Rights Reserved ©Bonneterie des petits pédestres</p>
+    <p> ©2021 Bonneterie des petits pédestres</p>
 </footer>
 
 <script src="js/main.js"></script>
