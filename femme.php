@@ -12,7 +12,7 @@ include 'includes/header.php';
        </tr>
    </thead>
     <?php
-        showProducts($listeBonnet);
+        showProducts($listeBonnet, $femme);
     ?>
 </table>
 

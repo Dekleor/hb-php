@@ -6,24 +6,28 @@ function tva($argument) {
 ?>
 
 <?php
-function showProducts($argument) {
-    foreach ($argument as $value) {
+function showProducts($argument, $type) {
+    $tab = array_filter($argument, function($k) use ($type) {
+        return $k[0] == $type;
+        var_dump($k);
+    });
+    foreach ($tab as $value) {
         echo "<tr>
             <td>
-                $value[0]
+                $value[1];
             </td>
             <td>";
-                echo tva($value[1]);
+                echo tva($value[2]);
             echo "</td>
             <td>";
-                if ($value[1] < 12) {
-                    echo "<span style='color:green;'>$value[1]€ </span>";
+                if ($value[2] < 12) {
+                    echo "<span style='color:green;'>$value[2]€ </span>";
                 } else {
-                     echo "<span style='color:blue;'>$value[1]€ </span>";
+                     echo "<span style='color:blue;'>$value[2]€ </span>";
                 }
             echo "</td>
             <td>
-                    $value[2]
+                    $value[3];
             </td>
         </tr>";
     }
