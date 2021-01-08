@@ -9,27 +9,24 @@ function tva($argument) {
 function showProducts($argument, $type) {
     $tab = array_filter($argument, function($k) use ($type) {
         return $k[0] == $type;
-        var_dump($k);
     });
     foreach ($tab as $value) {
-        echo "<tr>
-            <td>
-                $value[1];
-            </td>
-            <td>";
-                echo tva($value[2]);
-            echo "</td>
-            <td>";
-                if ($value[2] < 12) {
-                    echo "<span style='color:green;'>$value[2]€ </span>";
-                } else {
-                     echo "<span style='color:blue;'>$value[2]€ </span>";
-                }
-            echo "</td>
-            <td>
-                    $value[3];
-            </td>
-        </tr>";
+        echo "
+        <div class='card'>
+            <div class='card-header border-0'>
+                <img src='img/$value[1]' alt=''>
+            </div>
+            <div class='card-block px-2'>
+                <div id='placementTitre'>
+                    <h3 class='card-title'><strong>$value[2]</strong></h3>
+                    <h1  class='card-title'><strong>$value[3]€</strong></h1>
+                </div>
+                <div id='bot'>
+                    <p class='card-text'>$value[4]</p>
+                    <button href='#'>Ajouter au panier</button>
+                </div>
+            </div>
+        </div>";
     }
 }
 ?>
