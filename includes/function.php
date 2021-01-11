@@ -31,7 +31,7 @@ function showProducts($argument, $type) {
 function addToCart($id) {
     if (!empty($id)) {
         if (!isset($_SESSION['cart']))   {
-            $_SESSION['cart']=[];
+            $_SESSION['cart'] = [];
         }
         $_SESSION['cart'][] = $id;
     }
