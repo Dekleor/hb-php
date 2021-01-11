@@ -3,10 +3,10 @@
 include 'includes/header.php';
 
 foreach ($_SESSION['cart'] as $id) {
-        $value = $listeBonnet[$id];    
-        echo "
-        <p>$value[2]</p>
-        <p>$value[3]€</p>";
+    $value = $listeBonnet[$id];    
+    echo "
+    <p>$value[2]</p>
+    <p>$value[3]€</p>";
     }
 
 if (!empty($_GET)){

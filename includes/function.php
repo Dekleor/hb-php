@@ -4,7 +4,8 @@ function tva($argument) {
     return $horsTaxe;
 }
 
-function showProducts($argument, $type) {
+function showProducts($argument, $type)
+{
     $tab = array_filter($argument, function($k) use ($type) {
         return $k[0] == $type;
     });
