@@ -3,9 +3,7 @@ function tva($argument) {
     $horsTaxe = number_format($argument / 1.2, 2, ',', '');
     return $horsTaxe;
 }
-?>
 
-<?php
 function showProducts($argument, $type) {
     $tab = array_filter($argument, function($k) use ($type) {
         return $k[0] == $type;
@@ -38,4 +36,3 @@ function addToCart($id) {
         $_SESSION['cart'][] = $id;
     }
 }
-?>

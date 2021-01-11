@@ -4,13 +4,12 @@ require_once('array.php');
 require_once('function.php');
 session_start();
 
-if(!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password'] === $password) {
+if (!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password'] === $password) {
     $_SESSION['username'] = $_POST['username'];
     header("Location: index.php");
 } elseif (!empty($_POST['password'])) {
     $message = "Veuillez entrer un mot de passe correct";
     echo "<script type='text/javascript'>alert('$message');</script>";
-
 }
 ?>
 

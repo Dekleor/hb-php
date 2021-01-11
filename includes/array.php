@@ -29,6 +29,3 @@ $listeBonnet = [
 ];
 
 $password = 'toto';
-
-?>
-
