@@ -10,7 +10,7 @@ function showProducts($argument, $type) {
     $tab = array_filter($argument, function($k) use ($type) {
         return $k[0] == $type;
     });
-    foreach ($tab as $value) {
+    foreach ($tab as $key => $value) {
         echo "
         <div class='card'>
             <div class='card-header border-0'>
@@ -23,10 +23,19 @@ function showProducts($argument, $type) {
                 </div>
                 <div id='bot'>
                     <p class='card-text'>$value[4]</p>
-                    <button href='#'>Ajouter au panier</button>
+                    <a href='cart.php?id=$key'><button>Ajouter au panier</button></a>
                 </div>
             </div>
         </div>";
+    }
+}
+
+function addToCart($id) {
+    if (!empty($id)) {
+        if (!isset($_SESSION['cart']))   {
+            $_SESSION['cart']=[];
+        }
+        $_SESSION['cart'][] = $id;
     }
 }
 ?>

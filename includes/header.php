@@ -42,5 +42,14 @@ if(!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password'
         <a href="enfant.php"> Bonnets enfant</a>
         <a href="fantasy.php"> Bonnets fantaisy</a>
     </nav>
+    <?php
+    echo " 
+    <a href='cart' id='showCart'> Mon panier (";  
+    if (!empty($_SESSION['cart'])) {
+        echo count($_SESSION['cart']); echo ")</a>";
+    } else {
+        echo "0)</a>";
+    }
+    ?>
 </header>
 <main>
