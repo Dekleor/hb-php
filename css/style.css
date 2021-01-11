@@ -4,10 +4,10 @@
   }
 
 :root {
-    --rose: 207, 92, 120;
-    --bleu: 0, 88, 155;
-    --jaune: 245, 223, 77;
-    --bleuClair: 0, 160, 176;
+    --menuA: 217, 162, 130;
+    --MenuB: 166, 166, 166;
+    --writing: 13, 13, 13;
+    --background: 140, 89, 77;
 }
 
 html {
@@ -19,8 +19,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     position: relative;
-    background-color: rgb(var(--bleuClair));
-    color: rgb(var(--jaune));
+    background-color: rgb(var(--background));
+    color: rgb(var(--writing));
 }
 
 /******** HEADER ********/
@@ -31,10 +31,10 @@ header{
 header h1 {
     margin: 0px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/header.jpg);
-    background-position: bottom;
-    padding: 50px 0px;
+    background-position: cover ;
+    padding: 100px 0px;
     text-align: center;
-    color: rgb(var(--bleu));
+    color: rgb(var(--MenuB));
     text-shadow: 2px 2px black;
     font-family: pacifico;
 }
@@ -58,11 +58,18 @@ header nav a:hover, a:active {
 }
 
 header nav a:nth-child(even) {
-    background-color: rgb(var(--bleu));
+    background-color: rgb(var(--MenuB));
 }
 
 header nav a:nth-child(odd) {
-    background-color: rgb(var(--rose));
+    background-color: rgb(var(--menuA));
+}
+
+header #showCart {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 30px -10px 0;
+    font-family: pacifico;
 }
 
 /******** MAIN ********/
@@ -117,7 +124,7 @@ section h2 {
 
 #monCompte button {
     border-radius: 25px;
-    background-color: rgb(var(--rose));
+    background-color: rgb(var(--menuA));
     padding: 10px 20px;
 }
 
@@ -152,14 +159,13 @@ section h2 {
 
 .card button {
     border-radius: 25px;
-    background-color: rgb(var(--rose));
+    background-color: rgb(var(--menuA));
     padding: 10px 20px;
 }
 
 .card-text {
     text-align: justify;
 }
-
 /******** FOOTER ********/
 
 footer {

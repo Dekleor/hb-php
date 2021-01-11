@@ -1,6 +1,5 @@
 <?php
-session_start();
-unset($_SESSION['cart']);
+$emptyCart = true;
 include 'includes/header.php';
 
 echo "

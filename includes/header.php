@@ -3,6 +3,9 @@
 require_once('array.php');
 require_once('function.php');
 session_start();
+if (isset($emptyCart) && $emptyCart === true) {
+    unset($_SESSION['cart']);
+}
 
 if (!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password'] === $password) {
     $_SESSION['username'] = $_POST['username'];
@@ -37,9 +40,10 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password
         }
         ?>
         <a href="homme.php">Bonnets homme</a>
-        <a href="femme.php"> Bonnets femme</a>
-        <a href="enfant.php"> Bonnets enfant</a>
-        <a href="fantasy.php"> Bonnets fantaisy</a>
+        <a href="femme.php">Bonnets femme</a>
+        <a href="enfant.php">Bonnets enfant</a>
+        <a href="fantasy.php">Bonnets fantaisy</a>
+        <a href="contact.php">Nous contacter</a>
     </nav>
     <?php
     echo " 
