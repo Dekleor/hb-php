@@ -1,7 +1,8 @@
 <?php
 include 'includes/header.php';
 
-    echo '<form action="" method="post">  
+    echo '
+    <form action="" method="post">  
         <div class="container">   
             <label>Nom d"utilisateur : </label>   
             <input type="text" placeholder="Entrez votre nom d\'utilisateur" name="username" required>  

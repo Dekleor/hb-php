@@ -7,7 +7,7 @@ echo "
         <li>Nom</li>
         <li>Prenom</li>
         <li>Adresse</li>
-        <li>plein d\'infos autres a rajouter</li>
+        <li>plein d'infos autres a rajouter</li>
     </ul>
     <button type='button'> <a href='deco.php'>Se déconnecter</a></button>
 </section>";
