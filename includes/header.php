@@ -1,9 +1,10 @@
 <?php
 
+session_start();
 require_once('autoload.php');
 require_once('array.php');
 require_once('function.php');
-session_start();
+
 if (isset($emptyCart) && $emptyCart === true) {
     unset($_SESSION['cart']);
 }

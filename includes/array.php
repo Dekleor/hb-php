@@ -3,6 +3,7 @@
 $lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor diam, vulputate non elit sed, semper venenatis augue. Morbi quis viverra erat. Pellentesque porta, enim quis aliquam euismod, metus nibh molestie tortor, eu imperdiet leo mauris vitae quam. Quisque dolor felis, blandit nec ligula ac, varius molestie neque. Mauris sem tortor, vulputate nec nulla a.";
 
 $password = 'toto';
+$cart= new Cart();
 
 $beanie0 = new Beanie();
     $beanie0->cat="homme"; 

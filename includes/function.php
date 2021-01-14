@@ -22,18 +22,28 @@ function showProducts($argument, $type)
                 </div>
                 <div id='bot'>
                     <p class='card-text'>$beanie->desc</p>
-                    <a href='cart.php?id=$key'><button>Ajouter au panier</button></a>
+                    <a href='cart.php?add=$key'><button>Ajouter au panier</button></a>
                 </div>
             </div>
         </div>";
     }
 }
 
-function addToCart($id) {
-    if (!empty($id)) {
-        if (!isset($_SESSION['cart']))   {
-            $_SESSION['cart'] = [];
-        }
-        $_SESSION['cart'][] = $id;
+function getCartContent(): array
+{
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = [];
     }
+    return $_SESSION['cart'];
+}
+
+function findInProducts(array $products, ?string $id): ?Beanie
+{
+    foreach ($products as $key => $product) {
+        if ($key == $id) {
+            return $product;
+        }
+    }
+
+    return null;
 }
