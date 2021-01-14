@@ -2,11 +2,16 @@
 
 class Beanie
 {
+    const AVAILABLE_SIZES = ['S', 'M', 'L', 'XL'];
+    const AVAILABLE_MATERIALS = ['wool', 'cashmere', 'silk', 'cotton'];
+
     public $cat;
     public $pic;
     public $name;
     public $price;
     public $desc;
+    public $materials = [];
+    public $sizes = [];
 
     public function getCat()
     {
@@ -27,5 +32,15 @@ class Beanie
     public function getDesc()
     {
         return $this->desc;
+    }
+
+    public function hasSize($size): bool
+    {
+        return in_array($size, $this->sizes);
+    }
+
+    public function hasMaterial($material): bool
+    {
+        return in_array($material, $this->materials);
     }
 }

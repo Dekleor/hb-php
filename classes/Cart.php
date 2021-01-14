@@ -22,7 +22,7 @@ class Cart
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = [];
         }
-        
+
         $this->content = $_SESSION['cart'];
     }
 
@@ -116,5 +116,14 @@ class Cart
     protected function saveCart(): void
     {
         $_SESSION['cart'] = $this->content;
+    }
+
+    public function countQuantity() 
+    {
+        $totalQuantity = 0;
+        foreach ($this->content as $id => $quantity) {
+            $totalQuantity += $quantity;
+        }
+        return $totalQuantity;
     }
 }

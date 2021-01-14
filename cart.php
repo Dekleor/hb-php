@@ -56,7 +56,7 @@ $productsInCart = $cart->getContent();
             $product = findInProducts($listeBonnet, $id);
 
             // Dans mon cas, j'ai un id vide en session, dû à une erreur de saisie.
-            if (empty($id) || empty($product)) {
+            if (empty($product)) {
                 continue; // J'en profite pour vous montrer que vous pouvez sauter une itération d'une boucle avec le mot-clé continue (qui dit littéralement de passer à l'itération suivante).
             }
 

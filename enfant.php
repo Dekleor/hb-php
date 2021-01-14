@@ -4,7 +4,12 @@ include 'includes/header.php';
 
 <table>
     <?php
-        showProducts($listeBonnet, "enfant");
+        $type = "enfant";
+        $products = array_filter($listeBonnet, function($k) use ($type) {
+            return $k->cat == $type;
+        });
+        include 'includes/filters.php';
+        showProducts($products);
     ?>
 </table>
 
