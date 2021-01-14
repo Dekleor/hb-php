@@ -5,9 +5,6 @@ include 'includes/header.php';
 <table>
     <?php
         $type = "enfant";
-        $products = array_filter($listeBonnet, function($k) use ($type) {
-            return $k->cat == $type;
-        });
         include 'includes/filters.php';
         showProducts($products);
     ?>
@@ -15,4 +12,3 @@ include 'includes/header.php';
 
 <?php
 include 'includes/footer.php';
-?>

@@ -6,186 +6,185 @@ $password = 'toto';
 $cart= new Cart();
 
 $beanie0 = new Beanie();
-    $beanie0->cat="homme"; 
+    $beanie0->cat="homme";
     $beanie0->pic="homme1.jpg";
     $beanie0->name="Bonnet en laine";
     $beanie0->sizes=['S', 'M'];
     $beanie0->materials=['wool'];
-    $beanie0->price=10; 
+    $beanie0->price=10;
     $beanie0->desc=$lorem;
 
 $beanie1 = new Beanie();
     $beanie1->cat="homme";
-    $beanie1->pic="homme2.jpeg"; 
+    $beanie1->pic="homme2.jpeg";
     $beanie1->name="Bonnet en laine bio";
-    $beanie0->sizes=['M', 'L'];
-    $beanie0->materials=['wool'];
-    $beanie1->price=14; 
+    $beanie1->sizes=['M', 'L'];
+    $beanie1->materials=['wool'];
+    $beanie1->price=14;
     $beanie1->desc=$lorem;
-    
+
 $beanie2 = new Beanie();
-    $beanie2->cat="homme"; 
-    $beanie2->pic="homme3.jpg"; 
+    $beanie2->cat="homme";
+    $beanie2->pic="homme3.jpg";
     $beanie2->name="Bonnet en laine et cachemire";
-    $beanie0->sizes=['L', 'XL'];
-    $beanie0->materials=['wool', 'cashmere', 'silk'];
-    $beanie2->price=20; 
-    $beanie2->desc=$lorem; 
+    $beanie2->sizes=['L', 'XL'];
+    $beanie2->materials=['wool', 'cashmere', 'silk'];
+    $beanie2->price=20;
+    $beanie2->desc=$lorem;
 
 $beanie3 = new Beanie();
-    $beanie3->cat="homme"; 
-    $beanie3->pic="homme4.jpg"; 
+    $beanie3->cat="homme";
+    $beanie3->pic="homme4.jpg";
     $beanie3->name="Bonnet coton";
-    $beanie0->sizes=['XL', 'S'];
-    $beanie0->materials=['cotton']; 
-    $beanie3->price=12; 
+    $beanie3->sizes=['XL', 'S'];
+    $beanie3->materials=['cotton'];
+    $beanie3->price=12;
     $beanie3->desc=$lorem;
-    
+
 $beanie4 = new Beanie();
-    $beanie4->cat="homme"; 
-    $beanie4->pic="homme5.jpg"; 
+    $beanie4->cat="homme";
+    $beanie4->pic="homme5.jpg";
     $beanie4->name="Bonnet arc-en-ciel";
-    $beanie0->sizes=['S', 'M', 'L'];
-    $beanie0->materials=['wool', 'silk', 'cashmere', 'cotton'];
-    $beanie4->price=12; 
+    $beanie4->sizes=['S', 'M', 'L'];
+    $beanie4->materials=['wool', 'silk', 'cashmere', 'cotton'];
+    $beanie4->price=12;
     $beanie4->desc=$lorem;
 
-    
+
 $beanie5 = new Beanie();
-    $beanie5->cat="femme"; 
+    $beanie5->cat="femme";
     $beanie5->pic="femme1.jpg";
     $beanie5->name="Bonnet en laine";
-    $beanie0->sizes=['M', 'L', 'XL'];
-    $beanie0->materials=['wool'];
-    $beanie5->price=10; 
+    $beanie5->sizes=['M', 'L', 'XL'];
+    $beanie5->materials=['wool'];
+    $beanie5->price=10;
     $beanie5->desc=$lorem;
 
 $beanie6 = new Beanie();
-    $beanie6->cat="femme"; 
-    $beanie6->pic="femme2.jpg"; 
+    $beanie6->cat="femme";
+    $beanie6->pic="femme2.jpg";
     $beanie6->name="Bonnet en laine bio";
-    $beanie0->sizes=['L', 'XL', 'S'];
-    $beanie0->materials=['wool']; 
-    $beanie6->price=14; 
-    $beanie6->desc=$lorem; 
-    
+    $beanie6->sizes=['L', 'XL', 'S'];
+    $beanie6->materials=['wool'];
+    $beanie6->price=14;
+    $beanie6->desc=$lorem;
+
 $beanie7 = new Beanie();
-    $beanie7->cat="femme"; 
-    $beanie7->pic="femme3.jpg"; 
+    $beanie7->cat="femme";
+    $beanie7->pic="femme3.jpg";
     $beanie7->name="Bonnet en laine et cachemire";
-    $beanie0->sizes=['S', 'M', 'XL', 'L '];
-    $beanie0->materials=['wool', 'cashmere'];
-    $beanie7->price=20; 
-    $beanie7->desc=$lorem; 
+    $beanie7->sizes=['S', 'M', 'XL', 'L '];
+    $beanie7->materials=['wool', 'cashmere'];
+    $beanie7->price=20;
+    $beanie7->desc=$lorem;
 
 $beanie8 = new Beanie();
-    $beanie8->cat="femme"; 
-    $beanie8->pic="femme4.jpg"; 
+    $beanie8->cat="femme";
+    $beanie8->pic="femme4.jpg";
     $beanie8->name="Bonnet coton";
-    $beanie0->sizes=['S', 'M', 'L'];
-    $beanie0->materials=['cotton']; 
-    $beanie8->price=12; 
-    $beanie8->desc=$lorem;    
+    $beanie8->sizes=['S', 'M', 'L'];
+    $beanie8->materials=['cotton'];
+    $beanie8->price=12;
+    $beanie8->desc=$lorem;
 
 $beanie9 = new Beanie();
-    $beanie9->cat="femme"; 
-    $beanie9->pic="femme5.jpeg"; 
+    $beanie9->cat="femme";
+    $beanie9->pic="femme5.jpeg";
     $beanie9->name="Bonnet arc-en-ciel";
-    $beanie0->sizes=['S', 'M', 'L', 'XL'];
-    $beanie0->materials=['wool', 'silk', 'cashmere', 'cotton'];
-    $beanie9->price=12; 
+    $beanie9->sizes=['S', 'M', 'L', 'XL'];
+    $beanie9->materials=['wool', 'silk', 'cashmere', 'cotton'];
+    $beanie9->price=12;
     $beanie9->desc=$lorem;
 
 $beanie10 = new Beanie();
-    $beanie10->cat="enfant"; 
-    $beanie10->pic="enfant1.jpg"; 
+    $beanie10->cat="enfant";
+    $beanie10->pic="enfant1.jpg";
     $beanie10->name="Bonnet en laine";
-    $beanie0->sizes=['S'];
-    $beanie0->materials=['wool']; 
-    $beanie10->price=10; 
+    $beanie10->sizes=['S'];
+    $beanie10->materials=['wool'];
+    $beanie10->price=10;
     $beanie10->desc=$lorem;
-    
+
 $beanie11 = new Beanie();
-    $beanie11->cat="enfant"; 
-    $beanie11->pic="enfant2.jpg"; 
+    $beanie11->cat="enfant";
+    $beanie11->pic="enfant2.jpg";
     $beanie11->name="Bonnet en laine bio";
-    $beanie0->sizes=['S'];
-    $beanie0->materials=['wool'];
-    $beanie11->price=14; 
-    $beanie11->desc=$lorem; 
+    $beanie11->sizes=['S'];
+    $beanie11->materials=['wool'];
+    $beanie11->price=14;
+    $beanie11->desc=$lorem;
 
 $beanie12 = new Beanie();
-    $beanie12->cat="enfant"; 
-    $beanie12->pic="enfant3.jpg"; 
+    $beanie12->cat="enfant";
+    $beanie12->pic="enfant3.jpg";
     $beanie12->name="Bonnet en laine et cachemire";
-    $beanie0->sizes=['S', 'M'];
-    $beanie0->materials=['wool','cashmere'];
-    $beanie12->price=20; 
+    $beanie12->sizes=['S', 'M'];
+    $beanie12->materials=['wool','cashmere'];
+    $beanie12->price=20;
     $beanie12->desc=$lorem;
 
 $beanie13 = new Beanie();
-    $beanie13->cat="enfant"; 
-    $beanie13->pic="enfant4.jpg"; 
+    $beanie13->cat="enfant";
+    $beanie13->pic="enfant4.jpg";
     $beanie13->name="Bonnet coton";
-    $beanie0->sizes=['S', 'M'];
-    $beanie0->materials=['cotton'];
-    $beanie13->price=12; 
+    $beanie13->sizes=['S', 'M'];
+    $beanie13->materials=['cotton'];
+    $beanie13->price=12;
     $beanie13->desc=$lorem;
 
 $beanie14 = new Beanie();
-    $beanie14->cat="enfant"; 
-    $beanie14->pic="enfant5.jpg"; 
+    $beanie14->cat="enfant";
+    $beanie14->pic="enfant5.jpg";
     $beanie14->name="Bonnet arc-en-ciel";
-    $beanie0->sizes=['S', 'M', 'L'];
-    $beanie0->materials=['wool', 'silk', 'cashmere', 'cotton'];
-    $beanie14->price=12; 
+    $beanie14->sizes=['S', 'M', 'L'];
+    $beanie14->materials=['wool', 'silk', 'cashmere', 'cotton'];
+    $beanie14->price=12;
     $beanie14->desc=$lorem;
 
 $beanie15 = new Beanie();
-    $beanie15->cat="fantasy"; 
-    $beanie15->pic="fantasy1.jpg"; 
+    $beanie15->cat="fantasy";
+    $beanie15->pic="fantasy1.jpg";
     $beanie15->name="Bonnet casque";
-    $beanie0->sizes=['L'];
-    $beanie0->materials=['wool', 'cotton'];
-    $beanie15->price=10; 
+    $beanie15->sizes=['L'];
+    $beanie15->materials=['wool', 'cotton'];
+    $beanie15->price=10;
     $beanie15->desc=$lorem;
- 
-$beanie16 = new Beanie();
-    $beanie16->cat="fantasy"; 
-    $beanie16->pic="fantasy2.jpg"; 
-    $beanie16->name="Bonnet cthulhu";
-    $beanie0->sizes=['S', 'M'];
-    $beanie0->materials=['wool', 'cotton'];
-    $beanie16->price=14; 
-    $beanie16->desc=$lorem; 
-    
-$beanie17 = new Beanie();
-    $beanie17->cat="fantasy"; 
-    $beanie17->pic="fantasy3.jpg"; 
-    $beanie17->name="Bonnet cerveau";
-    $beanie0->sizes=['S', 'M', 'L', 'XL'];
-    $beanie0->materials=['wool', 'cotton', 'cashmere', 'cotton'];
-    $beanie17->price=20; 
-    $beanie17->desc=$lorem; 
-    
-$beanie18 = new Beanie();
-    $beanie18->cat="fantasy"; 
-    $beanie18->pic="fantasy4.jpg"; 
-    $beanie18->name="Bonnet batman";
-    $beanie0->sizes=['S', 'M', 'L', 'XL'];
-    $beanie0->materials=['wool', 'cotton', 'cashmere'];
-    $beanie18->price=12; 
-    $beanie18->desc=$lorem;
-    
-$beanie19 = new Beanie();
-    $beanie19->cat="fantasy"; 
-    $beanie19->pic="fantasy5.jpg"; 
-    $beanie19->name="Bonnet viking";
-    $beanie0->sizes=['S', 'L'];
-    $beanie0->materials=['wool', 'silk', 'cashmere', 'cotton'];
-    $beanie19->price=12; 
-    $beanie19->desc=$lorem;
 
+$beanie16 = new Beanie();
+    $beanie16->cat="fantasy";
+    $beanie16->pic="fantasy2.jpg";
+    $beanie16->name="Bonnet cthulhu";
+    $beanie16->sizes=['S', 'M'];
+    $beanie16->materials=['wool', 'cotton'];
+    $beanie16->price=14;
+    $beanie16->desc=$lorem;
+
+$beanie17 = new Beanie();
+    $beanie17->cat="fantasy";
+    $beanie17->pic="fantasy3.jpg";
+    $beanie17->name="Bonnet cerveau";
+    $beanie17->sizes=['S', 'M', 'L', 'XL'];
+    $beanie17->materials=['wool', 'cotton', 'cashmere', 'cotton'];
+    $beanie17->price=20;
+    $beanie17->desc=$lorem;
+
+$beanie18 = new Beanie();
+    $beanie18->cat="fantasy";
+    $beanie18->pic="fantasy4.jpg";
+    $beanie18->name="Bonnet batman";
+    $beanie18->sizes=['S', 'M', 'L', 'XL'];
+    $beanie18->materials=['wool', 'cotton', 'cashmere'];
+    $beanie18->price=12;
+    $beanie18->desc=$lorem;
+
+$beanie19 = new Beanie();
+    $beanie19->cat="fantasy";
+    $beanie19->pic="fantasy5.jpg";
+    $beanie19->name="Bonnet viking";
+    $beanie19->sizes=['S', 'L'];
+    $beanie19->materials=['wool', 'silk', 'cashmere', 'cotton'];
+    $beanie19->price=12;
+    $beanie19->desc=$lorem;
 
 $listeBonnet = [
     $beanie0,

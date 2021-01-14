@@ -4,11 +4,11 @@ include 'includes/header.php';
 
 <table>
     <?php
+        $type = "homme";
         include 'includes/filters.php';
-        showProducts($listeBonnet, "homme");
+        showProducts($products);
     ?>
 </table>
 
 <?php
 include 'includes/footer.php';
-?>

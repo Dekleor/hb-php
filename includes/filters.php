@@ -1,22 +1,20 @@
 <?php
-    if (isset($_GET['size'])) {
+    $products = array_filter($listeBonnet, function ($k) use ($type) {
+        return $k->cat == $type;
+    });
+
+    if (!empty($_GET['size'])) {
         $size = $_GET['size'];
-        $products = array_filter(
-            $products,
-            function (Beanie $product) use ($size) {
-                return $product->hasSize($size);
-            }
-        );
+        $products = array_filter($products, function (Beanie $product) use ($size) {
+            return $product->hasSize($size);
+        });
     }
 
-    if (isset($_GET['material'])) {
+    if (!empty($_GET['material'])) {
         $material = $_GET['material'];
-        $products = array_filter(
-            $products,
-            function (Beanie $product) use ($material) {
-                return $product->hasMaterial($material);
-            }
-        );
+        $products = array_filter($products, function (Beanie $product) use ($material) {
+            return $product->hasMaterial($material);
+        });
     }
 ?>
 <form action="" method="GET">
