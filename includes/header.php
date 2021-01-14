@@ -1,9 +1,10 @@
 <?php
 
+session_start();
 require_once('autoload.php');
 require_once('array.php');
 require_once('function.php');
-session_start();
+
 if (isset($emptyCart) && $emptyCart === true) {
     unset($_SESSION['cart']);
 }
@@ -22,6 +23,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
@@ -49,11 +51,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && $_POST['password
     <?php
     echo " 
     <a href='cart' id='showCart'> Mon panier (";  
-    if (!empty($_SESSION['cart'])) {
-        echo count($_SESSION['cart']); echo ")</a>";
-    } else {
-        echo "0)</a>";
-    }
+    echo $cart->countQuantity().' )</a>';
     ?>
 </header>
 <main>
