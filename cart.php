@@ -7,14 +7,16 @@ if (!isset($_SESSION['cart'])){
 }
 
 foreach ($_SESSION['cart'] as $id) {
-    $value = $listeBonnet[$id];    
+    $beanie = $listeBonnet[$id];
+    var_dump($_SESSION['cart']);
     echo "
-    <p>$value[2]</p>
-    <p>$value[3]€</p>";
+    <div id='cartList'>
+        <p>$beanie->name</p>
+        <p>$beanie->price €</p>
+    </div>";
 }
 if (!empty($_GET)){
     addToCart($_GET['id']);
-    header( "refresh:0;url = cart.php");
 
 } elseif (empty($_SESSION['cart'])) {
     echo "<p>Votre panier est vide</p>";

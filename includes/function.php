@@ -7,21 +7,21 @@ function tva($argument) {
 function showProducts($argument, $type)
 {
     $tab = array_filter($argument, function($k) use ($type) {
-        return $k[0] == $type;
+        return $k->cat == $type;
     });
-    foreach ($tab as $key => $value) {
+    foreach ($tab as $key => $beanie) {
         echo "
         <div class='card'>
             <div class='card-header border-0'>
-                <img src='img/$value[1]' alt=''>
+                <img src='img/$beanie->pic' alt=''>
             </div>
             <div class='card-block px-2'>
                 <div id='placementTitre'>
-                    <h3 class='card-title'><strong>$value[2]</strong></h3>
-                    <h1  class='card-title'><strong>$value[3]€</strong></h1>
+                    <h3 class='card-title'><strong>$beanie->pic</strong></h3>
+                    <h1  class='card-title'><strong>$beanie->price €</strong></h1>
                 </div>
                 <div id='bot'>
-                    <p class='card-text'>$value[4]</p>
+                    <p class='card-text'>$beanie->desc</p>
                     <a href='cart.php?id=$key'><button>Ajouter au panier</button></a>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <?php
 
+require_once('autoload.php');
 require_once('array.php');
 require_once('function.php');
 session_start();
